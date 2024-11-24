@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Will You Go On A Date With Me?</h1>
+        <div class="heart">❤️</div>
+        <button class="invitation-button" onclick="acceptInvitation()">Yes, I Would Love To!</button>
+        <button class="no-button" onclick="rejectInvitation()">No, I Don't Want To</button>
+        <div class="countdown" id="countdown"></div>
+    </div>
+
+    <!-- Celebration Image that will pop up -->
+    <div id="celebration-image" style="display:none;">
+        <img src="celebration.jpg" alt="Celebration" class="celebration-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

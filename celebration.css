@@ -1,0 +1,71 @@
+body {
+    background: #ff4040;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.celebration-container {
+    position: relative;
+    z-index: 10;
+    padding-top: 50px; /* Optional: add padding to top for spacing */
+}
+
+.celebration-img {
+    max-width: 80%; /* Maximum width is 80% of the container */
+    max-height: 400px; /* Set a max height to prevent the image from becoming too tall */
+    width: auto; /* Let the width adjust proportionally */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+.quote-container {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 4s forwards; /* Quote fade-in animation */
+}
+
+.hearts {
+    font-size: 3rem;
+    margin-top: 20px;
+    animation: heartsAnimation 5s infinite;
+}
+
+.fireworks {
+    font-size: 3rem;
+    margin-top: 20px;
+    animation: fireworksAnimation 2s infinite;
+}
+
+/* Heart animation */
+@keyframes heartsAnimation {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Fireworks animation */
+@keyframes fireworksAnimation {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    50% { opacity: 0.5; transform: translateY(-50px) scale(1.2); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Fade-in effect for the image */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

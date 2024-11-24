@@ -1,0 +1,108 @@
+/* Romantic theme styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    text-align: center;
+    padding: 50px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add background of hearts, fireworks, and flowers */
+.romantic-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/hearts.png'), url('images/fireworks.gif'), url('images/flowers.png');
+    background-size: 20%, cover, 50%;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: center, top center, bottom left;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Container for the page */
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Styling for the places list */
+.places-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.place-option {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+}
+
+.place-option:hover {
+    transform: scale(1.1);
+}
+
+.place-option img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.place-option p {
+    font-size: 1.2rem;
+    color: #ff4040;
+    margin-top: 10px;
+}
+
+/* Budget Slider Section */
+#budget-container {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.slider {
+    width: 80%;
+    margin: 20px 0;
+}
+
+.budget-submit {
+    background-color: #ff4040;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.budget-submit:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in animation for the title */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

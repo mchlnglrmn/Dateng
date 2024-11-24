@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Date Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Choose a Place for Our Date</h1>
+        <!-- Romantic Animated Background -->
+        <div class="romantic-background"></div>
+
+        <!-- Place options -->
+        <div class="places-list">
+            <div class="place-option" onclick="selectPlace('Beach Resort')">
+                <img src="images/j.jpg" alt="Beach Resort">
+                <p>Jollibee</p>
+            </div>
+            <div class="place-option" onclick="selectPlace('Mountain Retreat')">
+                <img src="images/mc.jpg" alt="Mountain Retreat">
+                <p>Mcdo</p>
+            </div>
+            <div class="place-option" onclick="selectPlace('Cozy Café')">
+                <img src="images/mi.jpg" alt="Cozy Café">
+                <p>Mang Inasal</p>
+            </div>
+            <div class="place-option" onclick="selectPlace('Amusement Park')">
+                <img src="images/gr.png" alt="Amusement Park">
+                <p>GreenWich</p>
+            </div>
+        </div>
+
+        <!-- Budget Slider Section -->
+        <div id="budget-container" style="display:none;">
+            <label for="budget-range">Select Budget ($1 - $100): </label>
+            <input type="range" id="budget-range" min="1" max="100" value="1" class="slider">
+            <span id="budget-value">1</span> <!-- Display the selected value -->
+            <button class="budget-submit" onclick="submitBudget()">Submit Budget</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
